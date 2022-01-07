@@ -42,7 +42,7 @@ namespace AmongUsReplay
         {
             static void Prefix(ChatController __instance, PlayerControl sourcePlayer, string chatText)
             {
-                string Sender = sourcePlayer?.nameText?.text;
+                string Sender = sourcePlayer.Data.PlayerName;
                 BepInExLoader.r?.AddChat(Sender, chatText);
             }
         }
