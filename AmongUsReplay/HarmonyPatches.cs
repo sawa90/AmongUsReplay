@@ -76,7 +76,6 @@ namespace AmongUsReplay
             static void Postfix(ElectricalDoors __instance)
             {
                 BepInExLoader.r?.setElectricalDoors(__instance);
-                BepInExLoader.log?.LogMessage("Door");
             }
         }
         [HarmonyPatch(typeof(ElectricalDoors), nameof(ElectricalDoors.Deserialize))]
@@ -85,8 +84,6 @@ namespace AmongUsReplay
             static void Postfix(ElectricalDoors __instance)
             {
                 BepInExLoader.r?.setElectricalDoors(__instance);
-
-                BepInExLoader.log?.LogMessage("Door Dese");
             }
         }
     }

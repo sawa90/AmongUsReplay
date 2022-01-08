@@ -137,7 +137,6 @@ namespace AmongUsReplay
             }
             public bool setCamera(bool on)
             {
-                log?.LogMessage(on);
                 if (on) Marshal.WriteByte(ReadSpacePtr + 4, 1);
                 else Marshal.WriteByte(ReadSpacePtr + 4, 0);
                 return true;
