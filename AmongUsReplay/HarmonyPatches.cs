@@ -54,7 +54,7 @@ namespace AmongUsReplay
             {
                 int remain = MeetingHud.Instance?.GetVotesRemaining() ?? 0;
                 string name = srcPlayer.PlayerName ?? "";
-                var lang = TranslationController.Instance?.CurrentLanguage;
+                var lang = TranslationController.Instance?.currentLanguage;
                 var IsJapanese = lang?.languageID == SupportedLangs.Japanese;
                 string text;
                 if(IsJapanese) text = $"{name}が投票しました。残り{remain}人";

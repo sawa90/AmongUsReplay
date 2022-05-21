@@ -92,10 +92,6 @@
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
-    <Reference Include="TheOtherRoles">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us_mod\BepInEx\plugins\TheOtherRoles.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnhollowerBaseLib">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Among Us_mod\BepInEx\core\UnhollowerBaseLib.dll</HintPath>
       <Private>False</Private>
